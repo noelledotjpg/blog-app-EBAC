@@ -3,7 +3,7 @@ import { getArtigos } from './lib'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const artigos = await getArtigos()
-  const baseUrl = 'https://seu-projeto.vercel.app'
+  const baseUrl = 'https://blog-app-ebac.vercel.app'
 
   const artigosSitemap = artigos.map((artigo) => ({
     url: `${baseUrl}/artigos/${artigo.slug}`,
